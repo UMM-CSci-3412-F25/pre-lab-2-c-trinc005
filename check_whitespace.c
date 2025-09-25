@@ -61,6 +61,9 @@ int is_clean(char const *str) {
   // greater than the second.
   int result = strcmp(str, cleaned);
 
+  //Checks weather or not the string is empty, if it is then nothing happens
+  //but if the string is not empty then it will free up the allocated memory
+  //assigned to it.
   if (!(cleaned[0] == '\0')) {
     free((void *)cleaned);
   }
